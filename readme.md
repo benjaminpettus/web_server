@@ -120,8 +120,7 @@ These are the basic specs for “Hello, Web Servers”, broken into 5 stages. If
   songs
 
   Single Artist (route: /artists/:artist_id)
- ![Artist_id]
-  (https://cloud.githubusercontent.com/assets/709100/26062990/9ae061ec-395a-11e7-976e-378f592e2252.png)
+ ![Artist_id](https://cloud.githubusercontent.com/assets/709100/26062990/9ae061ec-395a-11e7-976e-378f592e2252.png)
 
   single artist
 
