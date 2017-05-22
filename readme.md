@@ -30,19 +30,19 @@ These are the basic specs for “Hello, Web Servers”, broken into 5 stages. If
 
  - [ ] EJS is installed and set up for HTML templating
  - [ ] View template files are created in the /views subdirectory
- - [ ] Main view file is called views/index.ejs
+ - [x] Main view file is called views/index.ejs
  - [ ] Main view is rendered at route /
  - [ ] Main view shows a list of all artists (see wireframe)
- - [ ] Albums view file is called views/albums.ejs
+ - [x] Albums view file is called views/albums.ejs
  - [ ] Albums view is rendered at route /albums
  - [ ] Albums view shows a list of all albums (see wireframe)
- - [ ] Songs view file is called views/songs.ejs
+ - [x] Songs view file is called views/songs.ejs
  - [ ] Songs view is rendered at route /songs
  - [ ] Songs view shows a list of all songs (see wireframe)
- - [ ] Individual artist view file is called views/artist.ejs
+ - [x] Individual artist view file is called views/artist.ejs
  - [ ] Individual artist view is rendered at route /artists/:artist_id
  - [ ] Individual artist view shows a list of the artist’s songs (see wireframe)
- - [ ] Individual album view file is called views/album.ejs
+ - [x] Individual album view file is called views/album.ejs
  - [ ] Individual album view is rendered at route /albums/:album_id
  - [ ] Individual album view shows a list of the album’s songs (see wireframe)
  - [ ] CSS is organized into one or more files in the public/ directory
