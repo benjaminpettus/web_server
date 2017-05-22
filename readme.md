@@ -6,23 +6,27 @@ These are the basic specs for “Hello, Web Servers”, broken into 5 stages. If
 
   Setup the repo and file structure, install and configure Express, and get a basic server running.
 
-- [ ] Repo (your artifact) is created on GitHub
-- [ ] Repo follows a conventional file structure for an Express.js app:
-  - [ ] package.json: standard for any Node.js app; includes package info and lists dependencies
-  - [ ] server.js: your Express server, with all routes defined
-  - [ ] views/: for storing your EJS HTML templates
-  - [ ] public/: for storing static files like CSS and images
+- [x] Repo (your artifact) is created on GitHub
+- [x] Repo follows a conventional file structure for an Express.js app:
+  - [x] package.json: standard for any Node.js app; includes package info and lists dependencies
+  - [x] server.js: your Express server, with all routes defined
+  - [x] views/: for storing your EJS HTML templates
+  - [x] public/: for storing static files like CSS and images
   - [ ] README.md: includes overview of your repo
-- [ ] Express server can be started with $ node server.js
-- [ ] Server renders a page at the root route (/)
-- [ ] All package dependencies are defined in package.json
-- [ ] The artifact produced is properly licensed, preferably with the MIT license
+- [x] Express server can be started with $ node server.js
+- [x] Server renders a page at the root route (/)
+- [x] All package dependencies are defined in package.json
+- [x] The artifact produced is properly licensed, preferably with the MIT license
 
   ### Stage 2
 
-  Build out the routes and views for each page using the EJS templating language. Add basic styles so that they follow the layouts defined in the wireframes. Add any additional styles you like to make it look nice :).
+  Build out the routes and views for each page using the EJS templating language.
+  Add basic styles so that they follow the layouts defined in the wireframes.
+  Add any additional styles you like to make it look nice :).
 
-  At this point, you don’t need to actually show any real data, just render HTML with placeholder text and images. You’ll render real data in stage 3.
+  At this point, you don’t need to actually show any real data,
+  just render HTML with placeholder text and images.
+  You’ll render real data in stage 3.
 
  - [ ] EJS is installed and set up for HTML templating
  - [ ] View template files are created in the /views subdirectory
@@ -120,8 +124,7 @@ These are the basic specs for “Hello, Web Servers”, broken into 5 stages. If
   songs
 
   Single Artist (route: /artists/:artist_id)
-  ![Artist_id]
-  (https://cloud.githubusercontent.com/assets/709100/26062990/9ae061ec-395a-11e7-976e-378f592e2252.png)
+  ![Artist_id](https://cloud.githubusercontent.com/assets/709100/26062990/9ae061ec-395a-11e7-976e-378f592e2252.png)
 
   single artist
 
@@ -136,29 +139,32 @@ If you complete all of the specs listed above (the checkboxes), there’s no rea
 
 Track Current Song being “Played”
 
- Songs can be “played”: there are “Play” buttons next to each song, and a persistent footer showing the current “playing” song. Note: you don’t actually have to play any sounds (that’s a whole other ball game), just keep track of the current song.
- Cookies are used to track which song is currently “playing”.
+- [ ] Songs can be “played”: there are “Play” buttons next to each song, and a persistent footer showing the current “playing” song. Note: you don’t actually have to play any sounds (that’s a whole other ball game), just keep track of the current song.
+- [ ] Cookies are used to track which song is currently “playing”.
+
 Playlists
 
- There is a “Playlists” view.
- Users can see all playlists at /playlists.
- Users can create playlists and give them a name.
- Users can navigate to a playlist by its id using the route /playlists/:playlist_id.
- Users can add songs to a playlist.
- Users can delete songs from a playlist.
- Playlist data is saved to a data file on the server with the format data/playlists/:playlist_id.json.
+ - [ ] There is a “Playlists” view.
+ - [ ] Users can see all playlists at /playlists.
+ - [ ] Users can create playlists and give them a name.
+ - [ ] Users can navigate to a playlist by its id using the route /playlists/:playlist_id.
+ - [ ] Users can add songs to a playlist.
+ - [ ] Users can delete songs from a playlist.
+ - [ ] Playlist data is saved to a data file on the server with the format data/playlists/:playlist_id.json.
+
 Images from Last.fm API
 
- App uses the Last.fm API (you’ll need to create an account).
- Artist images are sourced from the Last.fm API.
- Album images are sourced from the Last.fm API.
+- [ ] App uses the Last.fm API (you’ll need to create an account).
+- [ ] Artist images are sourced from the Last.fm API.
+- [ ] Album images are sourced from the Last.fm API.
+
 Bossggle in Express
 
 And if you get through those, try turning Bossggle into an Express app.
 
- New repo bossggle-server is created
- Bossggle works the same as in the serverless version, but is built with Express and EJS
- Score and word history is saved using localStorage
+- [ ] New repo bossggle-server is created
+- [ ] Bossggle works the same as in the serverless version, but is built with Express and EJS
+- [ ] Score and word history is saved using localStorage
 
 
 ## Resources
