@@ -120,15 +120,15 @@ These are the basic specs for “Hello, Web Servers”, broken into 5 stages. If
   songs
 
   Single Artist (route: /artists/:artist_id)
-  ![Artist_id]
+ ![Artist_id]
   (https://cloud.githubusercontent.com/assets/709100/26062990/9ae061ec-395a-11e7-976e-378f592e2252.png)
 
   single artist
 
-  Single Album (route: /albums/:album_id)
+ Single Album (route: /albums/:album_id)
   (https://cloud.githubusercontent.com/assets/709100/26062991/9ae2bf50-395a-11e7-9312-94aed01e63a8.png)
 
-  single album
+ single album
   (https://cloud.githubusercontent.com/assets/709100/26062991/9ae2bf50-395a-11e7-9312-94aed01e63a8.png)
 
 ## Stretch
