@@ -101,32 +101,24 @@ These are the basic specs for “Hello, Web Servers”, broken into 5 stages. If
 
   If you finish early, move into stretch specs, or use the extra time to polish up your code.
 
-  Wireframes
+### Wireframes
+Use the wireframes as a guide for how you design the layout and structure of your HTML.
 
-  Use the wireframes as a guide for how you design the layout and structure of your HTML.
+Home: All Artists (route: /)
+![All Artists](https://cloud.githubusercontent.com/assets/709100/26007688/99706606-370f-11e7-98d6-98e5d3cfc121.png)
 
-  Home: All Artists (route: /)
-  ![All Artists](https://cloud.githubusercontent.com/assets/709100/26007688/99706606-370f-11e7-98d6-98e5d3cfc121.png)
-  home: all artists
 
-  Albums (route: /albums)
-  ![Albums](https://cloud.githubusercontent.com/assets/709100/26007684/996802ea-370f-11e7-996c-7bc04e21ac47.png)
+Albums (route: /albums)
+![Albums](https://cloud.githubusercontent.com/assets/709100/26007684/996802ea-370f-11e7-996c-7bc04e21ac47.png)
 
-  albums
+Songs (route: /songs)
+![Songs](https://cloud.githubusercontent.com/assets/709100/26007685/996d3814-370f-11e7-9893-69a6a28cfeba.png)
 
-  Songs (route: /songs)
-  ![Songs](https://cloud.githubusercontent.com/assets/709100/26007685/996d3814-370f-11e7-9893-69a6a28cfeba.png)
+Single Artist (route: /artists/:artist_id)
+![Artist_id](https://cloud.githubusercontent.com/assets/709100/26062990/9ae061ec-395a-11e7-976e-378f592e2252.png)
 
-  songs
-
-  Single Artist (route: /artists/:artist_id)
- ![Artist_id](https://cloud.githubusercontent.com/assets/709100/26062990/9ae061ec-395a-11e7-976e-378f592e2252.png)
-
-  single artist
-
- Single Album (route: /albums/:album_id)
-  ![Single Album](https://cloud.githubusercontent.com/assets/709100/26062991/9ae2bf50-395a-11e7-9312-94aed01e63a8.png)
-
+Single Album (route: /albums/:album_id)
+![Single Album](https://cloud.githubusercontent.com/assets/709100/26062991/9ae2bf50-395a-11e7-9312-94aed01e63a8.png)
   
 
 ## Stretch
