@@ -106,16 +106,16 @@ These are the basic specs for “Hello, Web Servers”, broken into 5 stages. If
   Use the wireframes as a guide for how you design the layout and structure of your HTML.
 
   Home: All Artists (route: /)
-  (https://cloud.githubusercontent.com/assets/709100/26007688/99706606-370f-11e7-98d6-98e5d3cfc121.png)
+  ![All Artists](https://cloud.githubusercontent.com/assets/709100/26007688/99706606-370f-11e7-98d6-98e5d3cfc121.png)
   home: all artists
 
   Albums (route: /albums)
-  (https://cloud.githubusercontent.com/assets/709100/26007684/996802ea-370f-11e7-996c-7bc04e21ac47.png)
+  ![Albums](https://cloud.githubusercontent.com/assets/709100/26007684/996802ea-370f-11e7-996c-7bc04e21ac47.png)
 
   albums
 
   Songs (route: /songs)
-  (https://cloud.githubusercontent.com/assets/709100/26007685/996d3814-370f-11e7-9893-69a6a28cfeba.png)
+  ![Songs](https://cloud.githubusercontent.com/assets/709100/26007685/996d3814-370f-11e7-9893-69a6a28cfeba.png)
 
   songs
 
@@ -125,10 +125,9 @@ These are the basic specs for “Hello, Web Servers”, broken into 5 stages. If
   single artist
 
  Single Album (route: /albums/:album_id)
-  (https://cloud.githubusercontent.com/assets/709100/26062991/9ae2bf50-395a-11e7-9312-94aed01e63a8.png)
+  ![Single Album](https://cloud.githubusercontent.com/assets/709100/26062991/9ae2bf50-395a-11e7-9312-94aed01e63a8.png)
 
- single album
-  (https://cloud.githubusercontent.com/assets/709100/26062991/9ae2bf50-395a-11e7-9312-94aed01e63a8.png)
+  
 
 ## Stretch
 If you complete all of the specs listed above (the checkboxes), there’s no reason to stop there! Try building more advanced features with these stretch specs.
