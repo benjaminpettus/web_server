@@ -6,8 +6,39 @@
   </head>
   <body>
     <% include ./partials/navbar%>
-    <h1><%- page %></h1>
-    
+
+    <table class="centered highlight">
+      <thead>
+        <h1><%- page %></h1>
+        <tr>
+            <th>Song</th>
+            <th>Artist</th>
+            <th>Album</th>
+            <th>Length</th>
+        </tr>
+      </thead>
+
+      <tbody>
+        <tr>
+          <td>Jethro</td>
+          <td>Thundercat</td>
+          <td>Drunk</td>
+          <td>01:35</td>
+        </tr>
+        <tr>
+          <td>Stigmata</td>
+          <td>Ab-Soul</td>
+          <td>These Days...</td>
+          <td>03:15</td>
+        </tr>
+        <tr>
+          <td>Jethro</td>
+          <td>Thundercat</td>
+          <td>Drunk</td>
+          <td>01:35</td>
+        </tr>
+      </tbody>
+    </table>
 
     <% include ./partials/footer %>
   </body>
