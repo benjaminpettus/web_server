@@ -19,13 +19,28 @@ const albums = require("./data/albums.json")
 const songs = require("./data/songs.json")
 
 app.get('/', (req, res) => {
-
-  res.render('index', { pageTitle: "Music Stuffs",
+  // res.json(artists)
+  res.render('index', { pageTitle: "Music Player",
                         page: "Artists",
-                        data: JSON.stringify(artists)
+                        data: artists
                       })
 })
 
+app.get('/albums', (req, res) => {
+    // res.json(albums)
+  res.render('albums', { pageTitle: "Music Player",
+                          page: "Albums",
+                          data: JSON.stringify(albums)
+                        })
+})
+
+app.get('/songs', (req, res) => {
+  // res.json(songs)
+  res.render('songs', { pageTitle: "Music Player",
+                          page: "Songs",
+                          data: songs
+                        })
+})
 
 
 
