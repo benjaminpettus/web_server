@@ -42,6 +42,23 @@ app.get('/songs', (req, res) => {
                         })
 })
 
+app.get('/artists/:artist_id', (req, res) => {
+  // res.json(songs)
+  res.render('artist', { pageTitle: "Music Player",
+                          page: "Artist"
+                          // data: songs
+                        })
+})
+
+app.get('/albums/:album_id', (req, res) => {
+  // res.json(songs)
+  res.render('album', { pageTitle: "Music Player",
+                          page: "Album Title"
+                          // data: songs
+                        })
+})
+
+
 
 
 

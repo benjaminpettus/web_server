@@ -32,12 +32,12 @@ These are the basic specs for “Hello, Web Servers”, broken into 5 stages. If
  - [x] View template files are created in the /views subdirectory
  - [x] Main view file is called views/index.ejs
  - [x] Main view is rendered at route /
- - [ ] Main view shows a list of all artists (see wireframe)
+ - [x] Main view shows a list of all artists (see wireframe)
  - [x] Albums view file is called views/albums.ejs
- - [ ] Albums view is rendered at route /albums
- - [ ] Albums view shows a list of all albums (see wireframe)
+ - [x] Albums view is rendered at route /albums
+ - [x] Albums view shows a list of all albums (see wireframe)
  - [x] Songs view file is called views/songs.ejs
- - [ ] Songs view is rendered at route /songs
+ - [x] Songs view is rendered at route /songs
  - [ ] Songs view shows a list of all songs (see wireframe)
  - [x] Individual artist view file is called views/artist.ejs
  - [ ] Individual artist view is rendered at route /artists/:artist_id
@@ -45,7 +45,7 @@ These are the basic specs for “Hello, Web Servers”, broken into 5 stages. If
  - [x] Individual album view file is called views/album.ejs
  - [ ] Individual album view is rendered at route /albums/:album_id
  - [ ] Individual album view shows a list of the album’s songs (see wireframe)
- - [ ] CSS is organized into one or more files in the public/ directory
+ - [x] CSS is organized into one or more files in the public/ directory
  - [ ] CSS declarations are well-named and formatted (consider using this small guide)
 
   Stage 3
@@ -84,7 +84,7 @@ These are the basic specs for “Hello, Web Servers”, broken into 5 stages. If
  - [ ] On all views that show song length, the length is shown in mm:ss format. For example, if the song has a length of 286 seconds, then it would be shown as 04:46 (286 seconds = 4 minutes, 46 seconds).
  - [ ] Actual album images are used instead of placeholders on albums list (/albums), artist (/artists/:artist_id), and album (/albums/:album_id) views. Hint: once you find an image (Google image search is a good place for this), you can add the URL to the albums.json fake data file.
  - [ ] Actual artist profile images are used instead of placeholders on main view (/) and artist view (/artists/:artist_id). Hint: once you find an image (Google image search is a good place for this), you can add the URL to the artists.json fake data file.
- - [ ]  App uses a CSS framework like Twitter bootstrap or Yahoo’s Pure.css.
+ - [x]  App uses a CSS framework like Twitter bootstrap or Yahoo’s Pure.css.
 
   ### Stage 5
 
