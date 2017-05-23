@@ -1,0 +1,17 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+}
+
+.card.horizontal {
+  display: flex;
+  width: 700px;
+  height: 200px;
+}
+
+
+.artist-card-attr {
+  display: flex;
+  flex-direction: row;
+}

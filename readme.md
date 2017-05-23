@@ -28,10 +28,10 @@ These are the basic specs for “Hello, Web Servers”, broken into 5 stages. If
   just render HTML with placeholder text and images.
   You’ll render real data in stage 3.
 
- - [ ] EJS is installed and set up for HTML templating
- - [ ] View template files are created in the /views subdirectory
+ - [x] EJS is installed and set up for HTML templating
+ - [x] View template files are created in the /views subdirectory
  - [x] Main view file is called views/index.ejs
- - [ ] Main view is rendered at route /
+ - [x] Main view is rendered at route /
  - [ ] Main view shows a list of all artists (see wireframe)
  - [x] Albums view file is called views/albums.ejs
  - [ ] Albums view is rendered at route /albums
