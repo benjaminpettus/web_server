@@ -3,9 +3,13 @@ const app = express()
 const path = require('path')
 const bodyParser = require('body-parser')
 const PORT = 3000
-
-
-
+const promise = require('bluebird')
+const options = {
+  promiseLib: promise
+}
+const pgp = require('pg-promise')(options)
+const connectionString = 'postgres://localhost:5432/music'
+const db = pgp(connectionString)
 
 app.set('view engine', 'ejs')
 app.set('views', path.join(__dirname + '/views'))
@@ -13,18 +17,23 @@ app.set('views', path.join(__dirname + '/views'))
 app.use(bodyParser.urlencoded({ extended: false }))
 app.use(express.static(path.join(__dirname, 'public')))
 
-
-const artists = require("./data/artists.json")
-const albums = require("./data/albums.json")
-const songs = require("./data/songs.json")
-
 app.get('/', (req, res) => {
   // res.json(artists)
-  res.render('index', { pageTitle: "Music Player",
-                        page: "Artists",
-                        data: artists
-                      })
+  db.any('select * from artists')
+  .then( (data) => {
+    res.status(200)
+    .json({
+      status: 'success',
+      data: data,
+      message: 'Retrieved all Artists'
+    })
+  })
+  .catch((err) => {
+    return next(err)
+  })
+
 })
+
 
 app.get('/albums', (req, res) => {
     // res.json(albums)

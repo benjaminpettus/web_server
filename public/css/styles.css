@@ -36,6 +36,12 @@
   align-self: center;
 }
 
+.song-attr {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
 
 .artist-card-attr {
   display: flex;
