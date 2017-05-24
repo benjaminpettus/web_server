@@ -22,10 +22,12 @@ app.get('/', (req, res) => {
   db.any('select * from artists')
   .then( (data) => {
     res.status(200)
-    .json({
+    .render('index', {
       status: 'success',
       data: data,
-      message: 'Retrieved all Artists'
+      message: 'Retrieved all Artists',
+      pageTitle: 'Music Player',
+      page: 'Artists'
     })
   })
   .catch((err) => {
@@ -36,43 +38,86 @@ app.get('/', (req, res) => {
 
 
 app.get('/albums', (req, res) => {
-    // res.json(albums)
-  res.render('albums', { pageTitle: "Music Player",
-                          page: "Albums",
-                          data: JSON.stringify(albums)
-                        })
+  // res.json(artists)
+  db.any('select * from albums')
+  .then( (data) => {
+    res.status(200)
+    .render('albums', {
+      status: 'success',
+      data: data,
+      message: 'Retrieved all Albums',
+      pageTitle: 'Music Player',
+      page: 'Albums'
+    })
+  })
+  .catch((err) => {
+    return next(err)
+  })
+
 })
+
 
 app.get('/songs', (req, res) => {
-  // res.json(songs)
-  res.render('songs', { pageTitle: "Music Player",
-                          page: "Songs",
-                          data: songs
-                        })
+  // res.json(artists)
+  db.any('select * from songs')
+  .then( (data) => {
+    res.status(200)
+    .render('songs', {
+      status: 'success',
+      data: data,
+      message: 'Retrieved all Songs',
+      pageTitle: 'Music Player',
+      page: 'Songs'
+    })
+  })
+  .catch((err) => {
+    return next(err)
+  })
+
 })
+
 
 app.get('/artists/:artist_id', (req, res) => {
-  // res.json(songs)
-  res.render('artist', { pageTitle: "Music Player",
-                          page: "Art Tatum"
-                          // daata: songs
-                        })
+  // res.json(artists)
+  const id = req.params
+  console.log(id)
+  db.any('select * from songs')
+  .then( (data) => {
+    res.status(200)
+    .render('artist', {
+      status: 'success',
+      data: data,
+      message: 'Retrieved all Songs',
+      pageTitle: 'Music Player',
+      page: 'Artist'
+    })
+  })
+  .catch((err) => {
+    return next(err)
+  })
+
 })
+
 
 app.get('/albums/:album_id', (req, res) => {
-  // res.json(songs)
-  res.render('album', { pageTitle: "Music Player",
-                          page: "Album Title"
-                          // data: songs
-                        })
+  // res.json(artists)
+  const id = req.params
+  console.log(id)
+  db.any('select * from songs')
+  .then( (data) => {
+    res.status(200)
+    .render('album', {
+      status: 'success',
+      data: data,
+      message: 'Retrieved all Songs',
+      pageTitle: 'Music Player',
+      page: 'Artist'
+    })
+  })
+  .catch((err) => {
+    return next(err)
+  })
 })
-
-
-
-
-
-
-
 
 const server = app.listen(PORT, () => {
   console.log('Listening on port', server.address().port)
