@@ -1,14 +1,46 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <% include ./partials/head %>
+    <%- include ./partials/head %>
     <title></title>
   </head>
   <body>
-    <% include ./partials/navbar%>
-    <h1><%- page %></h1>
+    <%- include ./partials/navbar%>
 
-
-    <% include ./partials/footer %>
+    <div class="artist-container container">
+      <div class="artist-header">
+        <div class="artist-header-text">
+          <div class="artist-name">
+            <h1><%- page %></h1>
+          </div>
+          <div class="artist-header-attr">
+              <p>Albums: 3</p>
+              <p>Genre: Jazz</p>
+          </div>
+      </div>
+        <img src="http://lorempixel.com/output/nightlife-q-c-200-200-2.jpg" alt="">
+      </div>
+      <div class="card horizontal">
+        <div class="card-image">
+          <img src="http://lorempixel.com/output/nightlife-q-c-200-200-2.jpg">
+        </div>
+        <div class="card-stacked">
+          <div class="card-content">
+            <h3>Aretha's Jazz</h3>
+          </div>
+          <div class="card-action">
+            <div class="artist-card-attr ">
+              <p>
+                Artist: Aretha Franklin
+              </p>
+              <p>
+                13 Songs
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <%- include ./partials/footer %>
   </body>
 </html>

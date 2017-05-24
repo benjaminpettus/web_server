@@ -4,10 +4,36 @@
   align-content: center;
 }
 
+.artist-container {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  margin-top: 30px;
+
+}
+.artist-header {
+  display: flex;
+  flex-direction: row;
+  margin-left: 50px;
+  justify-content: space-around;
+}
+.artist-header-text {
+  display:flex;
+  flex-direction: column;
+  justify-content: space-around;
+
+}
+
+.artist-header-attr {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
 .card.horizontal {
   display: flex;
   width: 700px;
   height: 200px;
+  align-self: center;
 }
 
 
