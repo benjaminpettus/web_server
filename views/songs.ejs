@@ -1,13 +1,13 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <% include ./partials/head %>
+    <% include ./layout/head %>
     <title></title>
   </head>
   <body>
-    <% include ./partials/navbar%>
+    <% include ./layout/header%>
 
-    <table class="centered highlight">
+    <table class="highlight container">
       <thead>
         <h1><%- page %></h1>
         <tr>
@@ -24,6 +24,7 @@
           <tr>
             <td><%= data[i].track_no %></td>
             <td><%= data[i].title %></td>
+            <td>Artist</td>
             <td><%= data[i].album_id %></td>
             <td><%= data[i].length %></td>
           </tr>
@@ -31,6 +32,6 @@
       </tbody>
     </table>
 
-    <% include ./partials/footer %>
+    <% include ./layout/footer %>
   </body>
 </html>

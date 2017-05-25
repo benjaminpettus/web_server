@@ -38,7 +38,7 @@ These are the basic specs for “Hello, Web Servers”, broken into 5 stages. If
  - [x] Albums view shows a list of all albums (see wireframe)
  - [x] Songs view file is called views/songs.ejs
  - [x] Songs view is rendered at route /songs
- - [ ] Songs view shows a list of all songs (see wireframe)
+ - [x] Songs view shows a list of all songs (see wireframe)
  - [x] Individual artist view file is called views/artist.ejs
  - [ ] Individual artist view is rendered at route /artists/:artist_id
  - [ ] Individual artist view shows a list of the artist’s songs (see wireframe)
@@ -54,15 +54,15 @@ These are the basic specs for “Hello, Web Servers”, broken into 5 stages. If
 
   Use the fake data set provided.
 
- - [ ] Main view (/) shows all artists from the fake artists data.
- - [ ] Main view shows artist name and genre.
+ - [x] Main view (/) shows all artists from the fake artists data.
+ - [x] Main view shows artist name and genre.
  - [ ] Artist name on main view links to the artist view (/artists/:artist_id).
- - [ ] Album list view (/albums) shows all albums from the fake album data.
+ - [x] Album list view (/albums) shows all albums from the fake album data.
  - [ ] Album list view shows the name of the artist for each album.
  - [ ] Album name on album list view links to the album view (/albums/:album_id).
  - [ ] Artist name on album list view links to the artist view (/artists/:artist_id).
- - [ ] Song list view (/songs) shows all songs from the fake song data.
- - [ ] Song list view shows song title, artist, album, and song length in seconds.
+ - [x] Song list view (/songs) shows all songs from the fake song data.
+ - [x] Song list view shows song title, artist, album, and song length in seconds.
  - [ ] Artist view (/artists/:artist_id) shows all albums for the artists with id :artist_id    from the fake artist data. Hint: you can filter the albums by their artist_id property.
  - [ ] Artist view shows artist name and genre.
  - [ ] Artist view shows each album title and year released.
@@ -90,7 +90,7 @@ These are the basic specs for “Hello, Web Servers”, broken into 5 stages. If
 
   Refactor and improve the organization of your code. Use EJS’s “includes” feature to better organize the different components of your views.
 
-- [ ] All views use an include for the header nav (with links to “Artists”, “Albums” and “Songs”).
+- [x] All views use an include for the header nav (with links to “Artists”, “Albums” and “Songs”).
 - [ ] Header nav include is kept in the file views/layout/header.ejs.
 - [ ] Main view (/) uses an artist list item include for each artist.
 - [ ] Artists list item include is kept in the file views/artists/list_item.ejs.
