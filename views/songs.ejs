@@ -11,6 +11,7 @@
       <thead>
         <h1><%- page %></h1>
         <tr>
+            <th>Track No.</th>
             <th>Song</th>
             <th>Artist</th>
             <th>Album</th>
@@ -19,24 +20,14 @@
       </thead>
 
       <tbody>
-        <tr>
-          <td>Jethro</td>
-          <td>Thundercat</td>
-          <td>Drunk</td>
-          <td>01:35</td>
-        </tr>
-        <tr>
-          <td>Stigmata</td>
-          <td>Ab-Soul</td>
-          <td>These Days...</td>
-          <td>03:15</td>
-        </tr>
-        <tr>
-          <td>Jethro</td>
-          <td>Thundercat</td>
-          <td>Drunk</td>
-          <td>01:35</td>
-        </tr>
+        <% for(var i=0; i < data.length; i++) {%>
+          <tr>
+            <td><%= data[i].track_no %></td>
+            <td><%= data[i].title %></td>
+            <td><%= data[i].album_id %></td>
+            <td><%= data[i].length %></td>
+          </tr>
+        <% } %>
       </tbody>
     </table>
 
