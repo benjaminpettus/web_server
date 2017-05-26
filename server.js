@@ -40,7 +40,7 @@ app.get('/', (req, res) => {
 
 app.get('/albums', (req, res, next) => {
   // res.json(artists)
-  db.any('select albums.title, artists.name, count(songs.album_id) from albums inner join artists on albums.artist_id=artists.id inner join songs on albums.id=songs.album_id group by (albums.title, artists.name) order by(artists.name)')
+  db.any('select albums.id, albums.title, artists.name, count(songs.album_id) from albums inner join artists on albums.artist_id=artists.id inner join songs on albums.id=songs.album_id group by (albums.id, albums.title, artists.name) order by(artists.name)')
 
   .then( (data) => {
     res.status(200)
@@ -62,7 +62,7 @@ app.get('/albums', (req, res, next) => {
 
 app.get('/songs', (req, res) => {
   // res.json(artists)
-  db.any('select songs.track_no, songs.title, artists.name, albums.title as album, songs.length from songs inner join albums on songs.album_id=albums.id inner join artists on albums.artist_id=artists.id order by songs.id')  
+  db.any('select songs.track_no, songs.title, artists.name, albums.title as album, songs.length from songs inner join albums on songs.album_id=albums.id inner join artists on albums.artist_id=artists.id order by songs.id')
   .then( (data) => {
     res.status(200)
     .render('songs', {

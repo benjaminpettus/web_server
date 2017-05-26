@@ -7,30 +7,7 @@
   <body>
     <% include ./layout/header%>
 
-    <div class="col s17 m7 container">
-      <h1><%- page %></h1>
-
-      <% for(var i=0; i< data.length; i++) {%>
-        <div class="card horizontal">
-          <div class="card-image">
-            <img src="http://lorempixel.com/output/nightlife-q-c-200-200-2.jpg">
-          </div>
-          <div class="card-stacked">
-            <div class="card-content">
-              <h3><%= data[i].name %></h3>
-            </div>
-            <div class="card-action">
-              <div class="artist-card-attr ">
-                <p>
-                  Albums: <%= data[i].count %>
-                </p>
-                <p>Genre: <%= data[i].genre %></p>
-              </div>
-            </div>
-          </div>
-        </div>
-      <% } %>
-    </div>
+    <% include ./artists/list_item %>
 
     <% include ./layout/footer %>
   </body>

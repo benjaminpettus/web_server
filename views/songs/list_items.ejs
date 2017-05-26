@@ -1,0 +1,24 @@
+<table class="highlight container">
+  <thead>
+    <h1><%- page %></h1>
+    <tr>
+        <th>Track No.</th>
+        <th>Song</th>
+        <th>Artist</th>
+        <th>Album</th>
+        <th>Length</th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% for(var i=0; i < data.length; i++) {%>
+      <tr>
+        <td><%= data[i].track_no %></td>
+        <td><%= data[i].title %></td>
+        <td><%= data[i].name %></td>
+        <td><%= data[i].album %></td>
+        <td><%= data[i].length %></td>
+      </tr>
+    <% } %>
+  </tbody>
+</table>
