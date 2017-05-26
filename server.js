@@ -7,6 +7,7 @@ const promise = require('bluebird')
 const options = {
   promiseLib: promise
 }
+
 const pgp = require('pg-promise')(options)
 const connectionString = 'postgres://localhost:5432/music'
 const db = pgp(connectionString)
@@ -19,7 +20,7 @@ app.use(express.static(path.join(__dirname, 'public')))
 
 app.get('/', (req, res) => {
   // res.json(artists)
-  db.any('select * from artists')
+  db.any('select artists.id, artists.name, artists.genre, count(albums.artist_id) from artists inner join albums on artists.id=albums.artist_id group by (artists. id, artists.name, artists.genre) order by (artists.id)')
   .then( (data) => {
     res.status(200)
     .render('index', {
@@ -37,9 +38,10 @@ app.get('/', (req, res) => {
 })
 
 
-app.get('/albums', (req, res) => {
+app.get('/albums', (req, res, next) => {
   // res.json(artists)
-  db.any('select * from albums')
+  db.any('select albums.id, albums.title, artists.name, count(songs.album_id) from albums inner join artists on albums.artist_id=artists.id inner join songs on albums.id=songs.album_id group by (albums.id, albums.title, artists.name) order by(artists.name)')
+
   .then( (data) => {
     res.status(200)
     .render('albums', {
@@ -49,6 +51,7 @@ app.get('/albums', (req, res) => {
       pageTitle: 'Music Player',
       page: 'Albums'
     })
+    console.log(data)
   })
   .catch((err) => {
     return next(err)
@@ -59,7 +62,7 @@ app.get('/albums', (req, res) => {
 
 app.get('/songs', (req, res) => {
   // res.json(artists)
-  db.any('select * from songs')
+  db.any('select songs.track_no, songs.title, artists.name, albums.title as album, songs.length from songs inner join albums on songs.album_id=albums.id inner join artists on albums.artist_id=artists.id order by songs.id')
   .then( (data) => {
     res.status(200)
     .render('songs', {

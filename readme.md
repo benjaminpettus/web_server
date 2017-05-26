@@ -12,7 +12,7 @@ These are the basic specs for “Hello, Web Servers”, broken into 5 stages. If
   - [x] server.js: your Express server, with all routes defined
   - [x] views/: for storing your EJS HTML templates
   - [x] public/: for storing static files like CSS and images
-  - [ ] README.md: includes overview of your repo
+  - [x] README.md: includes overview of your repo
 - [x] Express server can be started with $ node server.js
 - [x] Server renders a page at the root route (/)
 - [x] All package dependencies are defined in package.json
@@ -38,15 +38,15 @@ These are the basic specs for “Hello, Web Servers”, broken into 5 stages. If
  - [x] Albums view shows a list of all albums (see wireframe)
  - [x] Songs view file is called views/songs.ejs
  - [x] Songs view is rendered at route /songs
- - [ ] Songs view shows a list of all songs (see wireframe)
+ - [x] Songs view shows a list of all songs (see wireframe)
  - [x] Individual artist view file is called views/artist.ejs
- - [ ] Individual artist view is rendered at route /artists/:artist_id
+ - [x] Individual artist view is rendered at route /artists/:artist_id
  - [ ] Individual artist view shows a list of the artist’s songs (see wireframe)
  - [x] Individual album view file is called views/album.ejs
- - [ ] Individual album view is rendered at route /albums/:album_id
+ - [x] Individual album view is rendered at route /albums/:album_id
  - [ ] Individual album view shows a list of the album’s songs (see wireframe)
  - [x] CSS is organized into one or more files in the public/ directory
- - [ ] CSS declarations are well-named and formatted (consider using this small guide)
+ - [x] CSS declarations are well-named and formatted (consider using this small guide)
 
   Stage 3
 
@@ -54,16 +54,16 @@ These are the basic specs for “Hello, Web Servers”, broken into 5 stages. If
 
   Use the fake data set provided.
 
- - [ ] Main view (/) shows all artists from the fake artists data.
- - [ ] Main view shows artist name and genre.
- - [ ] Artist name on main view links to the artist view (/artists/:artist_id).
- - [ ] Album list view (/albums) shows all albums from the fake album data.
- - [ ] Album list view shows the name of the artist for each album.
- - [ ] Album name on album list view links to the album view (/albums/:album_id).
- - [ ] Artist name on album list view links to the artist view (/artists/:artist_id).
- - [ ] Song list view (/songs) shows all songs from the fake song data.
- - [ ] Song list view shows song title, artist, album, and song length in seconds.
- - [ ] Artist view (/artists/:artist_id) shows all albums for the artists with id :artist_id    from the fake artist data. Hint: you can filter the albums by their artist_id property.
+ - [x] Main view (/) shows all artists from the fake artists data.
+ - [x] Main view shows artist name and genre.
+ - [x] Artist name on main view links to the artist view (/artists/:artist_id).
+ - [x] Album list view (/albums) shows all albums from the fake album data.
+ - [x] Album list view shows the name of the artist for each album.
+ - [x] Album name on album list view links to the album view (/albums/:album_id).
+ - [x] Artist name on album list view links to the artist view (/artists/:artist_id).
+ - [x] Song list view (/songs) shows all songs from the fake song data.
+ - [x] Song list view shows song title, artist, album, and song length in seconds.
+ - [ ] Artist view (/artists/:artist_id) shows all albums for the artists with id :artist_id from the fake artist data. Hint: you can filter the albums by their artist_id property.
  - [ ] Artist view shows artist name and genre.
  - [ ] Artist view shows each album title and year released.
  - [ ] Album names on artist view links to the album view (/albums/:album_id).
@@ -76,8 +76,8 @@ These are the basic specs for “Hello, Web Servers”, broken into 5 stages. If
 
   Improve the views by adding summary data (e.g. song count for album), parsing the song length into minutes and seconds, showing actual album artwork and artist profile images, and integrating a CSS framework to make it prettier.
 
- - [ ] Main view (/) shows an album count for each artist.
- - [ ] Album list view (/albums) shows a song count for each album.
+ - [x] Main view (/) shows an album count for each artist.
+ - [x] Album list view (/albums) shows a song count for each album.
  - [ ] Artist view (/artists/:artist_id) shows an album count for the artist.
  - [ ] Artist view (/artists/:artist_id) shows a song count for each album.
  - [ ] Album view (/albums/:album_id) shows a song count for the album.
@@ -90,18 +90,18 @@ These are the basic specs for “Hello, Web Servers”, broken into 5 stages. If
 
   Refactor and improve the organization of your code. Use EJS’s “includes” feature to better organize the different components of your views.
 
-- [ ] All views use an include for the header nav (with links to “Artists”, “Albums” and “Songs”).
-- [ ] Header nav include is kept in the file views/layout/header.ejs.
-- [ ] Main view (/) uses an artist list item include for each artist.
-- [ ] Artists list item include is kept in the file views/artists/list_item.ejs.
-- [ ] Albums list view (/albums) uses an album list item include for each album.
-- [ ] Albums list item include is kept in the file views/albums/list_item.ejs.
-- [ ] Songs list view (/songs) uses a song list item include for each song.
-- [ ] Songs list item include is kept in the file views/songs/list_item.ejs.
+- [x] All views use an include for the header nav (with links to “Artists”, “Albums” and “Songs”).
+- [x] Header nav include is kept in the file views/layout/header.ejs.
+- [x] Main view (/) uses an artist list item include for each artist.
+- [x] Artists list item include is kept in the file views/artists/list_item.ejs.
+- [x] Albums list view (/albums) uses an album list item include for each album.
+- [x] Albums list item include is kept in the file views/albums/list_item.ejs.
+- [x] Songs list view (/songs) uses a song list item include for each song.
+- [x] Songs list item include is kept in the file views/songs/list_item.ejs.
 - [ ] Artist view (/artists/:artist_id) uses an artist album include for each album.
 - [ ] Artist album include is kept in the file views/artists/album.ejs.
 - [ ] Album view (/albums/:album_id) uses an album song for each album.
-- [ ] Album song include is kept in the file views/albums/song.ejs.
+- [x] Album song include is kept in the file views/albums/song.ejs.
 
   If you finish early, move into stretch specs, or use the extra time to polish up your code.
 

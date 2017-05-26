@@ -1,45 +1,14 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <% include ./partials/head %>
+    <% include ./layout/head %>
     <title></title>
   </head>
   <body>
-    <% include ./partials/navbar%>
+    <% include ./layout/header %>
 
-    <table class="centered highlight">
-      <thead>
-        <h1><%- page %></h1>
-        <tr>
-            <th>Song</th>
-            <th>Artist</th>
-            <th>Album</th>
-            <th>Length</th>
-        </tr>
-      </thead>
+    <% include ./albums/song %>
 
-      <tbody>
-        <tr>
-          <td>Jethro</td>
-          <td>Thundercat</td>
-          <td>Drunk</td>
-          <td>01:35</td>
-        </tr>
-        <tr>
-          <td>Stigmata</td>
-          <td>Ab-Soul</td>
-          <td>These Days...</td>
-          <td>03:15</td>
-        </tr>
-        <tr>
-          <td>Jethro</td>
-          <td>Thundercat</td>
-          <td>Drunk</td>
-          <td>01:35</td>
-        </tr>
-      </tbody>
-    </table>
-
-    <% include ./partials/footer %>
+    <% include ./layout/footer %>
   </body>
 </html>
